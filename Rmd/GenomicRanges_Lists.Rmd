@@ -54,6 +54,7 @@ seqnames(gL)
 I very often want to get the length of each of the elements.  Surprisingly it is very slow to get this using `sapply(gL, length)` (or at least it used to be very slow).  There is a dedicated function for this:
 ```{r elementLengths}
 elementLengths(gL)
+###Error in elementLengths(gL) : could not find function "elementLengths"
 ```
 We have a new `XXapply` function with the fancy name `endoapply`.  This is used when you want to apply a function which maps a `GRanges` into a `GRanges`, say a `shift` or `resize`.
 ```{r endoapply}
